@@ -1,19 +1,16 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import BackgroundImage from '../assets/images/concept01.jpg';
 
 const Home = () => {
   return (
     <section id="home" className="relative h-screen flex items-center">
       {/* バックグラウンド画像 */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/img/mv.jpg"
           alt="家族が暮らす温かみのある住まい"
           fill
-          sizes="100vw"
-          quality={90}
           style={{ objectFit: 'cover' }}
           priority
         />
